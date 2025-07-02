@@ -170,10 +170,10 @@ def main():
     video_non_violent_sequences = collector.collect_sequences_from_folder(video_non_violence_folder, 0, is_video=True)
     
     # Uncomment for image data
-    # print("Collecting image violent sequences...", flush=True)
-    # image_violent_sequences = collector.collect_sequences_from_folder(image_violence_folder, 1, is_video=False)
-    # print("Collecting image non-violent sequences...", flush=True)
-    # image_non_violent_sequences = collector.collect_sequences_from_folder(image_non_violence_folder, 0, is_video=False)
+    print("Collecting image violent sequences...", flush=True)
+    image_violent_sequences = collector.collect_sequences_from_folder(image_violence_folder, 1, is_video=False)
+    print("Collecting image non-violent sequences...", flush=True)
+    image_non_violent_sequences = collector.collect_sequences_from_folder(image_non_violence_folder, 0, is_video=False)
 
     sequence_data = video_violent_sequences + video_non_violent_sequences # + image_violent_sequences + image_non_violent_sequences
     print(f"Total sequences collected: {len(sequence_data)}", flush=True)
