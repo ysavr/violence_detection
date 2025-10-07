@@ -183,7 +183,8 @@ def main():
     detector = MediaPipeViolenceDetector(sequence_length=10, tflite_model_path="violence_mediapipe_multiperson.tflite")
     
     # Test with video
-    video_path = "../../data/video/testing/bullying_siswa.mp4"
+    # video_path = "../../data/video/testing/V_116.mp4"
+    video_path = "../../data/video/testing/gyms.mp4"
     detector.detect_in_video(video_path)
 
     # Test with image (uncomment as needed)
